@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meus Filmes</title>
+
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 class="title">Cadastro de Filmes</h1>
+        <form id="cadastroFilme">
+            <input name="titulo" placeholder="Título do Filme" required />
+            <textarea name="descricao" placeholder="Descrição" required></textarea>
+            <input name="genero" placeholder="Gênero" required />
+            <input name="ano" placeholder="Ano de Lançamento (ex: 2021)" required pattern="\d{4}" title="Ano com 4 dígitos" />
+            <input name="urlImagem" placeholder="URL da Imagem" required pattern="https?://.+" title="Insira uma URL válida" />
+            <button type="submit">Adicionar Filme</button>
+        </form>
+        <div class="lista">
+            <!-- Filmes serão adicionados aqui dinamicamente -->
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
