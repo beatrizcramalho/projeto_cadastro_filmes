@@ -57,13 +57,41 @@ form button:hover {
     border-radius: 5px;
 }
 
-.item:hover {
-    background-color: cornflowerblue;
-    cursor: pointer;
-    color: white;
-}
-
 .item img {
     width: 100%;
     border-radius: 5px;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+}
+
+.filtros input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.filtros button {
+    padding: 5px 10px;
+    background-color: cornflowerblue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-ler-mais {
+    background-color: transparent;
+    color: cornflowerblue;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9em;
+    padding: 5px 0;
+}
+
+.btn-ler-mais:hover {
+    text-decoration: underline;
 }

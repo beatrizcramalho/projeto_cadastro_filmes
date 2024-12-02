@@ -17,6 +17,12 @@
             <input name="urlImagem" placeholder="URL da Imagem" required pattern="https?://.+" title="Insira uma URL válida" />
             <button type="submit">Adicionar Filme</button>
         </form>
+        <div class="filtros">
+            <input id="filtroGenero" placeholder="Filtrar por Gênero" />
+            <input id="filtroAno" placeholder="Filtrar por Ano" pattern="\d{4}" title="Ano com 4 dígitos" />
+            <button onclick="filtrarFilmes()">Filtrar</button>
+            <button onclick="limparFiltros()">Limpar</button>
+        </div>           
         <div class="lista">
             <!-- Filmes serão adicionados aqui dinamicamente -->
         </div>
